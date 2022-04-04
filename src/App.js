@@ -7,11 +7,20 @@ const Data = JSON.map(
         (data) => 
         {
             return(
+              <div>
+              <br />
+                    <div className="card"shadow p-3 mb-5 bg-body rounded>
+                      <br />
+                      
                     <div key={data.id}>
                         <h4>{data.game}</h4>
-                        <p><img src={data.image} className="img-fluid" /></p>
+                        <p><img src={data.image} alt="" className="img-fluid"/></p>
                         <p>{data.description}</p>
                         <h5>{data.price}</h5>
+                        
+                    </div>
+                    
+                    </div>
                     </div>
             );
         }
